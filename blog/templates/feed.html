@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br>
+{% for post in feed %}
+<div class="card" style="width: 100%; margin-bottom: 0.5vh">
+    <div class="card-header">
+        <b>{{ post.author }}</b> - {{ post.created_date }}
+    </div>
+    <div class="card-body">
+        {{ post.text }}
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

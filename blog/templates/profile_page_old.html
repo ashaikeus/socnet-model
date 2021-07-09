@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card" style="background: linear-gradient(#CCCCDD, #9090A0); border-radius: 14px; box-shadow: 0px 0px 12px #AAAABB, 0px 0px 5px white;
+position: absolute; top: 4%; left: 2%; width: 25%; text-align: center">
+    <br>
+  <img src="{{ pf.pfp }}" class="card-img-top" style="border-radius: 50%; border: 4px solid #111122CC; box-shadow: 0px 0px 20px #00000044; object-fit: cover; overflow: hidden; aspect-ratio: 1/1; width: 60%; margin: auto">
+  <div class="card-body">
+      <h1 class="card-title"><b>{{ pf.nickname }}</b></h1>
+      {% for i in pf.choices.all %}
+      <i><b>{{ i }}:</b> {{ i.content }}</i>
+      {% endfor %}
+      <br><br>
+      {% for i in pf.tags.all %}
+      <i>{{ i }};</i>
+      {% endfor %}
+      <br><br>
+      <p class="card-text">{{ pf.bio }}</p>
+      <br>
+  </div>
+</div>
+{% endblock %}

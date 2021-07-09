@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body style="background-color: #005577; font-family: 'Piazzolla', serif;">
+
+<header>
+<nav class="navbar sticky-top navbar-dark" style="background-color: #000114; border-bottom: 4px solid #005577; text-decoration: wavy underline;">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="font-size: 2em; font-family: 'Architects Daughter', cursive;" href="#">nazvaniye</a>
+  </div>
+</nav>
+</header>
+
+<div class="sidenav" style="height: 100%; width: 200px; font-size: 1.8em; position: fixed; color: #EEEEEE; background-color: #000114; overflow: hidden; padding: 6px;
+text-align: center; border-right: 4px solid #005577;">
+  <a href="#" style="color: #FFFFFF">link 1</a><br>
+  <a href="#" style="color: #FFFFFF">link 2</a><br>
+  <a href="#" style="color: #FFFFFF">...</a>
+</div>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+
+</div>
+</body>
+</html>
